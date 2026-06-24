@@ -1,4 +1,6 @@
-// Implementar login
+// Login
+
+//https://github.com/nicolasceronamigo/Evaluacion02_Front_End
 
 const usuario_correcto = "nicolas.ceron";
 const password_correcta = "JS2026NC06";
@@ -26,7 +28,7 @@ function login(){
         errores.push("Error: Contraseña incorrecta.")
     }
     if(usuario === usuario_correcto && password === password_correcta ){
-        //acceso y redireccion
+        //guardado de sesion y redireccion
         let sesion = {
             usuario,
             password

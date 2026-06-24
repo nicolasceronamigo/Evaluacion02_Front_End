@@ -1,4 +1,4 @@
-// Implementar formulario
+// Formulario
 
 //nombre usuario
 const nombre_usuario = JSON.parse(localStorage.getItem("sesion"))["usuario"];
