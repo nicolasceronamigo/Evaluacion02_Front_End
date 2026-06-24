@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Entradas al Cine</title>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+
+<body>
+    <main class="contenedor">
+        <section class="card">
+            <h1>Compra de Entradas al Cine</h1>
+            <p class="descripcion">
+                Complete el siguiente formulario para realizar la compra de entradas.
+            </p>
+            <hr>
+            <div class="usuario">
+                <strong>Bienvenido(a): </strong>
+                <span id="nombreUsuario"></span>
+            </div>
+            <hr>
+            <form id="formulario">
+                <div class="grupo">
+                    <label for="nombre">Nombre del cliente</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre" minlength="3" maxlength="100">
+                </div>
+                <div class="grupo">
+                    <label for="pelicula">Película</label>
+                    <select id="pelicula">
+                        <option value="">Seleccione...</option>
+                        <option>Lilo & Stitch</option>
+                        <option>Jurassic World: Renace</option>
+                        <option>F1: La Película</option>
+                        <option>Superman</option>
+                        <option>Cómo Entrenar a tu Dragón</option>
+                    </select>
+                </div>
+                <div class="grupo">
+                    <label for="cantidad">Cantidad de entradas</label>
+                    <input type="number" id="cantidad" min="1" max="10">
+                </div>
+                <div class="grupo">
+                    <label for="sala">Tipo de sala</label>
+                    <select id="sala">
+                        <option value="">Seleccione...</option>
+                        <option>2D</option>
+                        <option>3D</option>
+                        <option>IMAX</option>
+                    </select>
+                </div>
+                <div class="grupo">
+                    <label for="pago">Método de pago</label>
+                    <select id="pago">
+                        <option value="">Seleccione...</option>
+                        <option>Efectivo</option>
+                        <option>Tarjeta de Débito</option>
+                        <option>Tarjeta de Crédito</option>
+                    </select>
+                </div>
+
+                <div id="errores">
+                </div>
+
+                <button id="btnComprarEntradas" type="button">
+                    Comprar Entradas
+                </button>
+            </form>
+        </section>
+    </main>
+    <script src="js/formulario.js"></script>
+</body>
+
+</html>
